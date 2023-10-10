@@ -1,6 +1,6 @@
 :root {
     --header-color:#5454ff;
-    --background-color:#535353;
+    --background-color:#333333;
     --project-color:#01c94d;
     --text-color: #f0f8ff;
 }
@@ -28,7 +28,6 @@ html,body {
     padding-right: 30px;
 }
 
-
 .nav-link {
     color: var(--text-color);
     font-size: 24px;
@@ -49,4 +48,13 @@ html,body {
     align-items: center;
     height: 100vh;
     background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: xx-large;
 }
+
+#welcome-section p {
+    color: var(--header-color);
+    margin-top: -30px;
+    font-weight: lighter;
+}
+

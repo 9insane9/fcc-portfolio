@@ -80,8 +80,11 @@ html,body {
 .project-tile {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 400px;
+    min-width: 320px;
+    max-width: 380px;
+    min-height: 320px;
+    max-height: 380px;
+    flex: 1 1 auto;
     border: 1px solid purple;
 
 }

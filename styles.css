@@ -137,6 +137,7 @@ html,body, a {
     height: 80vh;
     font-size: xx-large;
     background-color: var(--background-color);
+    padding: 0 20px;
 }
 
 .contact-text {
@@ -154,7 +155,7 @@ html,body, a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 25px;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .profile-link img {
@@ -192,7 +193,7 @@ footer { /* text doesn't line up when amount of lines is different on each side 
     height: 100px;
     text-wrap: wrap;
     line-height: 22px;
-    padding-left: 5px;
+    padding-left: 10px;
     border-top: 5px solid var(--header-color);
     background-color: var(--background-color);
 }

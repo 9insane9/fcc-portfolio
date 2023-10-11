@@ -45,6 +45,7 @@ html,body, a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100vh;
     background-color: var(--background-color);
     font-size: xx-large;
@@ -64,8 +65,13 @@ html,body, a {
 }
 
 #projects h1 {
-    margin: 0;
+    margin: 0 20px 30px 20px;
     text-align: center;
+    line-height: 80px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 22px;
+
 }
 
 .tile-container {
@@ -93,8 +99,6 @@ html,body, a {
     flex: 0 1 auto;
     object-fit: cover;
     height: 80%;
-    
-
 }
 
 .project-tile p {
@@ -108,6 +112,12 @@ html,body, a {
     height: 20%;
     background-color: var(--background-color);
 }
+
+/* .project-tile p:hover:before {
+    display: flex;
+    color: orange;
+    content: "< ";
+} */
 
 /* CONTACT */
 #contact {
@@ -135,10 +145,32 @@ html,body, a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
+    padding: 0 10px;
 }
 
-#profile-link {
+.profile-link img {
+    display: inline;
+    height: 32px;
+    aspect-ratio: 1/1;
+    margin-right: 5px;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    text-shadow: 2px 2px 2px black;
+}
+
+.profile-link:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    transition:0.3s linear;
+}
+
+.profile-link:not(:hover) {
+    transform: scaleX(1) scaleY(1);
+    transition:0.3s linear;
 }
 
 /* FOOTER */
@@ -153,3 +185,34 @@ footer { /* text doesn't line up when amount of lines is different on each side 
     border-top: 5px solid var(--header-color);
     background-color: var(--background-color);
 }
+
+/* SMALLER SCREENS */ 
+@media only screen and (max-width: 1080px) {
+    .tile-container {
+        flex-wrap: wrap;
+    }
+
+    .project-tile {
+        flex: 1 1 auto;
+        max-width: 1100px;
+        max-height: 400px;
+    }
+
+}
+
+
+
+
+
+
+
+/*icons attributions*/
+/*
+
+<a  href="https://icons8.com/icon/UWBXWx2eN8Pt/github">GitHub</a> icon by <a href="https://icons8.com">Icons8</a>
+
+<a  href="https://icons8.com/icon/baRhMh2wmjbT/email">Email</a> icon by <a href="https://icons8.com">Icons8</a>
+
+<a  href="https://icons8.com/icon/2olGSGqpqGWD/phone">Phone</a> icon by <a href="https://icons8.com">Icons8</a>
+
+*/

@@ -7,15 +7,18 @@
     <title>My Portfolio</title>
 </head>
 <body>
+    <!-- NAVBAR SECTION -->
     <nav id="navbar">
         <a class="nav-link" href="#welcome-section">About</a>
         <a class="nav-link" href="#projects">Work</a>
         <a class="nav-link" href="#contact">Contact</a>
     </nav>
+    <!-- WELCOME SECTION -->
     <div id="welcome-section">
         <h1>Greeting I am Potato</h1>
         <p><em>a web developer</em></p>
     </div>
+    <!-- PROJECTS SECTION -->
     <div id="projects">
         <h1>These are some of my projects</h1>
         <div class="tile-container">
@@ -30,23 +33,34 @@
                 <p>Project Title</p>
             </a>
             <a class="project-tile" href="" target="_blank">
-                <img src="" 
+                <img src="https://img.freepik.com/free-photo/river-surrounded-by-forests-cloudy-sky-thuringia-germany_181624-30863.jpg?w=1380&t=st=1697035635~exp=1697036235~hmac=b059fc4e109a37459b947e1dc864fa2f5a8a7c5d37e5464b6622ba0a572862fa" 
                      alt="project image">
                 <p>Project Title</p>
             </a>
         </div>
     </div>
+    <!-- CONTACT SECTION -->
     <div id="contact">
         <div class="contact-text">
             <h1>Let's work together...</h1>
             <p><em>Why did the chicken cross the road?</em></p>
         </div>
         <div class="contact-links">
-            <a id="profile-link" href="">GitHub</a>
-            <a id="profile-link" href="">Send a mail</a>
-            <a id="profile-link" href="">Call me</a>
+            <a id="profile-link" class="profile-link git" href="https://github.com/9insane9">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFoElEQVR4nO2Ze2iXZRTHX+fmNmPlYFjYzZk1XGQXQ7QsxOiKzrKIKEqxzBGZdoH+qAwyUyoqszLpihUVk+a6X+juFAu6SUKFo9V0VmTNzEtzfeK488jZ4/O+v/e3/d4F0Rfef55znnN53uc5zznniaL/EUXAMOAy4EHgLeA7YCvwl35bdUxoS4BLZU70bwI4BLgR+Jze4zPgBpHVn4YfBSwHdlE47AIeBUZkafgBwF0xhu8A3gZuBeqAGqASKNGvUsfqlOcdneNDZN8JDC608SfrHvbRDEwHKnohs0Lnigwf3wJjCmV8PbDbU/AxcFpBFER7dZwecER0zuqr4AWe0N+AK4ABhTLeQWQCM4DfPZ13RL0BsNATtA4Y3ith+emtBj71dC/IV8g8T8DLBT9YuQPGK54Nc/LZj51m4iqgGBgEPAu0Al8BjwBnAUV9MHQgMFlDqMjcCDys26lYF85BLsQJuQRKuNvkHdYypclNG8IXYoSRcSBwAjAJOB+YCkwEjpeVVR4x8EJgQ4zMM5WvHFhjxtuAg5IckJVw2GKve+BFkiEr2AL8ncDTpeH46xyylhq9hwE/G9pDccafpAocpnp0Mc7hKuABoIO+YwuwCJhrxtZ6uqcZmtg4OuTAS4ZpVYBu7wK3rYbqWej0btMvgQ/1/DQBHwHrdR877ARuc8EBONLQfgzot4e6wSfWmF8vHh4bECAKHXpEJGCkZpjyF0uCv7ibrxQYq7xHeLThRn5rYO5oz8ajLXGxmdwYo9ymEqdEBQbdB95hTQyP/E2HhZGJCHK6Hc6LiU7thmdmBg7cZOS3uIjl8Uyxf2lvRgAcZwbltA8MTHzM8PwKHJyBAyOA7UbP3QGeEtXvUBt5p/+FmGrLHuB9MT8DJ6YbPX8AQwI8DYZnjgw8ZQauCUywDn6QlfFmO8t94nB55AG41tCfkIG1ZmBiYMJKQ6+PMgbdBY/D8gBdbniH5shLHQ4PTJAs1GFcPzgw2eh7I0DveV8A28zAfpWVd+3X9oMDE4y+1QG65FoOHTKwxwyEItDqLON/jlDZFKBLluqwRwb+zPEHJB1wqIsyBjDT6Hs8QK8y9O2RJlMOhwYmSLPK4fZ+cGCp0Tc/QB9l6Jsjr3zbr1AHLjD05n5w4Jsc9kjB5bAu0irLYXZgwhCTbUoyNTZD4881tnSEEkPgesOzQgau7jEQFvy04ZEKqTQD4yu8iHdPDF+j4ZnlUmmH9lDLRPMUm040FrLIpztZfN9b/aoAXxHwi+E7xl3f7f5trOPjtXY9UdIMekIK8Iul2O+D4YO1urP6ZZtOS7HFNlnCvYbwnI6t8AzerAmWD8lgn9ec6ZykolsrOMn7b9bcvsOTJXfS3IT5rwa3mG4RVw9L2VebozhPgnTWqgPKxwRalBY/AGfn6Ip3GUerk2rOZ4B3iccOfaj4PoY+JWDAlTG8G/SNoDzO+MCF2hRiGG88lNW/SAvzOGzU/L3ee+SQgr44IL/cS5Xl0I5KMjomveiKTSr14cKWdcM8pdu8DkQIixIMsYdwfUrjq7w/vSxXOLOpxWvaRbDdgFsS+kE7k/r6GnX28Ua5jS/VloxDe6hKC/0u2+Ba5u2/16VuUEfEwU80olwnuXoKo2x7pjyBr0jPokNX6Gyl7U5L/9NCjL5EejMawU7V56OyQjhA93mxta9gXirjjRCJMvmiIYVc+8ZWFnNX2IauYElexpvW9/15OtCWQq69C0rN+ACNajZVENwXKrTycWR2TORp026djRDtKeTZ/uggHRsHvOfJ7wxlx7114gzthFlIZHpT38wcfkohyy7GDD1PPmRRJhXEeO/ZZ7G3gj5aU8ixTQQfu/VtLrvnLC3pVnqh1uHJFPNtPu/QqQlhTWaGBwwZqS/3LZqlyvtCZYp5Q3UB5LDKm8H8NPfHfxb/ADeP7Y+12YQYAAAAAElFTkSuQmCC">
+                GitHub
+            </a>
+            <a class="profile-link mail" href="mailto:exanple@example.com">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACl0lEQVR4nO2Z3U4UMRiGG5E9AT2SRW8BuAfxBowYQuK5CWIQ0HsQ0Mvw9z40ei6LgqgxRuGcLAd64mM++Cap48xsZ6ft1mTeZLObbH/eZ9p+0/YzplWrVo0FdIAl4AWwD5wQTifax3Pts+ML4ibwhdHpM7DQBOAc8Nhq8B2wBswAE16eUnG/E8AssA7sWP1vi6dhGswgfgLLQzXSUJw9zBX1cAozzHTKIK4Gc+ruZ96CuVFnYWdrYtkkIuCuevoEjLtUWLLWRPTpVCZgDOipt0WXCi+18D2TmIAN9fbMpfBHLTxjEhNn0Uy071K4r4UnTWICLqi3vkvhU5lEhau/soIazR4BR4TXIbBVtD3xASJv1tjaDAFij8QecMV4FtC1QqzoyNVfHZBMPeu76xFiGtjN9UFIkClrM+dlZHIjsQdcDg6iv73BFEEYRx+NQXzB5CA+ZBBRQZrCVEFEBxkWZhDESEDqwrhAjBIkH/8LQ7NGIzGfSeCnfPloOrVsiJ71+6uebaYV4BbwzTrrvK+CISZIAURXP28p1yvgkgKWwhALpAjC+m8cuAO80WPBMfAauA2cL3mb/wUTBaRgcRcuWBfpA/mnLUKD+ISoinpEAAm1aZSRibJplMMOPkdiwMiIvrv6M64F9cQWWw9DHXW3ciMTSj8EIshRNxVRAyTl66CL6u34f7+gm6tzQSeZItG6SUzAA/X2pM4l9k6Cl9i7dS6xO5ruEq2YRASsqqcDp7SCVlrQSpJcmQ/ucrCfa8Av4DdwvW7lbQtGkixjwZxWT6dVhSi8eXTN39nXpD3NT8yGDM3ApEan+9aakJHYbLRmJWen6a5R6aD2dKqAkYPSomSKdMOYvTRDqK/n+qfap9vCbtWqlanSH4eQlIOKd6DNAAAAAElFTkSuQmCC">
+                Send a mail
+            </a>
+            <a class="profile-link call" href="tel:555-555-555">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADmUlEQVR4nO2ZS2wNURjHR2kTjbaISheiYoMUi0ajoWzYeFW8X6smNJLWI2m30gWVVBpsiJV4VLARVhJiK3baehUltSNKPdJSr58c/pOc3My9M/femd4R97+c7/+d8/1nzvnOd75xnDzyyCNrAEXADuAq0A+MEB1GNMcVYLuZOywRm4GX5A4vgI3ZCBgPdFoD3geagDnAxFDekve8E4G5QDPQbc1/DCjIZEBXxBdgd0aDZAmgAGgEvrpi0h1gkyViWWSRBo9nuSVmQzob26xLgz1OTADsVUz9gRIAsE0O3blYTj7LrFexbQnicFnkfT68WcBJ4CHwHhgAWoFxTkQADii2S0HIT0Wel4KzNcVZcjBsAS6AKs3R5/gB+CzypCT2OuC7OBeAamAKsFPPhoHZTgQASjTHpyDkP0hhvyvKCQ/bRdluR7XE8IkvEFEbznyNn0Cxh30a8FZDZH4aj5EQg58p/Bvdr+LEVYgB8FGUyY4HgArZXzsxF9IrSk0S+wLZn2cZc+RCzorS7FOjnXZiLqRBlJsetjJgSPbqEOKOVMhUYFTZqzzBtkru95yIQFhCxLkh2qGE50v0/FVoN7uIhZjTHdVYZUkKO889FCshBjq9DTocC0C9npu9Uun8A0IWaZ/8AGoTbNc0TG+y8yY2QgyAdtGf2iWLisiHlpjKuAspAnrkct00LCzbDEvMBzUu/iQAVcxn1J15A9wxtRkBCs1IhIhvuiqDXoegvoy7zNxsdo/kuOV3BYhMiJV23YtWm4e93vpybiLo1EWpQoWmWzUP6yY4bsyFyG+DNr7BKXuZWal5MbAaKPXwL7fuMwYtORFiiRmx9kxxBmPskv9AzoRYy2zQyma1afqXyfddToVYCcDdE2a5ddgVgI9vjfwe5FyIlZrbrUaF2eBtwHQfvy7xj8dCSEIFYNKqCyPspumb6e1PEa/YBG9lrpnZCvkkbklYYjTuUiUAcwVIhe+m25lkjNJ02kFug64qTCEJh2SDbpo9Vg/ACDCtproUvvPFfRJkoq6oO4aZAmhRbOeDkLe4WSPxUMsl+Pvj6ZFi2xTEoRB4JocmJyYA9isms/QLgzqtB35pY66IPEr/eFYqFhPT2nSdj+oNjCpVjvkyAyaogPymWI5kMkiBDjTzFgwe6//HwrBvfQnzTtYcrZoTxXA4q8Y4sM5KyblAH7AmrLdUqMr2vDKH24SLAkOa45zmnBCKiDzy+M/xGzJk4hA7L56MAAAAAElFTkSuQmCC">
+                Call me
+            </a>
         </div>
     </div>
+    <!-- FOOTER SECTION -->
     <footer>
         <p>**Right now this is a practice page, it may become an actual portfolio later</p>
         <p>Created to complete <a href="https://www.freecodecamp.com/">freeCodeCamp</a> certification</p>

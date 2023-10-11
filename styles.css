@@ -26,6 +26,8 @@ html,body, a {
     position: sticky;
     top: 0;
     padding-right: 30px;
+
+    z-index: 2; /*icons*/
 }
 
 .nav-link {
@@ -49,6 +51,8 @@ html,body, a {
     height: 100vh;
     background-color: var(--background-color);
     font-size: xx-large;
+
+    z-index: 0; /*icons*/
 }
 
 #welcome-section p {
@@ -79,7 +83,7 @@ html,body, a {
     justify-content: center;
     gap: 40px;
     width: 100%;
-    padding: 20px;
+    padding: 20px 30px;
 }
 
 .project-tile {
@@ -91,7 +95,6 @@ html,body, a {
     max-height: 380px;
     aspect-ratio: 1/1;
     flex: 1 1 auto;
-    border: 1px solid purple;
     text-decoration: none;
 }
 
@@ -110,14 +113,20 @@ html,body, a {
     margin: 0;
     padding: 10px 0;
     height: 20%;
+    font-size: 1.5rem;
     background-color: var(--background-color);
 }
 
-/* .project-tile p:hover:before {
-    display: flex;
-    color: orange;
-    content: "< ";
-} */
+/*hover effects*/
+.project-tile:hover {
+    transform: scaleX(1.05) scaleY(1.05);
+    transition:0.2s linear 0.2s;
+}
+
+.project-tile:not(:hover) {
+    transform: scaleX(1) scaleY(1);
+    transition:0.2s linear;
+}
 
 /* CONTACT */
 #contact {
@@ -163,6 +172,7 @@ html,body, a {
     text-shadow: 2px 2px 2px black;
 }
 
+/*hover effects*/
 .profile-link:hover {
     transform: scaleX(1.1) scaleY(1.1);
     transition:0.3s linear;
@@ -182,8 +192,25 @@ footer { /* text doesn't line up when amount of lines is different on each side 
     height: 100px;
     text-wrap: wrap;
     line-height: 22px;
+    padding-left: 5px;
     border-top: 5px solid var(--header-color);
     background-color: var(--background-color);
+}
+
+/* ICON ATTRIBUTION */
+.icon-attribution {
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 30px;
+    font-size: 1.2rem;
+    color: var(--background-color);
+}
+
+.icon-attribution a {
+    display: block;
+    padding: 3px;
+    color: var(--background-color);
 }
 
 /* SMALLER SCREENS */ 

@@ -226,6 +226,12 @@ footer { /* text doesn't line up when amount of lines is different on each side 
         max-height: 420px;
     }
 
+    /*for some reason, mobile displays default font color
+    so i add this to see if that works*/
+    .icon-attribution {
+        color: var(--background-color);
+    }
+
 }
 
 
